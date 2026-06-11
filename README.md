@@ -6,16 +6,16 @@ A console-based strategy game where two players take turns drawing lines between
 
 Tools / Resources
 
-• Language: Java (JDK 8 or higher)
-• Libraries: java.util.Scanner (User Input), java.util.ArrayList (Move Tracking)
+• Language: Java (JDK 8 or higher)     
+• Libraries: java.util.Scanner (User Input), java.util.ArrayList (Move Tracking)   
 • IDE: IntelliJ IDEA or Eclipse
 
 Steps
 
-• Display a grid of dots on the console screen.
-• Allow players to draw horizontal or vertical lines between dots.
-• Validate moves to prevent duplicate line entries.
-• Detect completed boxes automatically.
+• Display a grid of dots on the console screen.  
+• Allow players to draw horizontal or vertical lines between dots.  
+• Validate moves to prevent duplicate line entries.   
+• Detect completed boxes automatically.   
 • Update player scores and declare the winner after all boxes are completed.
 
 Architecture
