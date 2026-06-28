@@ -26,7 +26,7 @@ A separate `GamePanel` class was created by extending `JPanel`. This panel is re
 
 The **GameFrame.java** class creates the main application window using Java Swing. It configures the window properties and loads the `GamePanel` to display the game interface.
 
-![GameFrame.java](SS-2.png)
+![GameFrame.java](ss-2.png)
 
 ---
 
@@ -38,7 +38,7 @@ Mouse event handling was implemented using `MouseAdapter`. The application detec
 
 The **GamePanel.java** class extends `JPanel` and handles the game panel, draws the game board, and processes mouse click events for user interaction.
 
-![GamePanel.java](SS-3.png)
+![GamePanel.java](ss-3.png)
 
 ---
 
@@ -50,7 +50,7 @@ A 4×4 grid of dots was drawn using the `Graphics` class and the `paintComponent
 
 The application successfully displays the game board window with a properly rendered 4×4 grid of dots, confirming that the rendering process works correctly.
 
-![Game Board](SS-4.png)
+![Game Board](ss-4.png)
 
 ---
 
