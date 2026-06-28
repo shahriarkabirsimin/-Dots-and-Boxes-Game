@@ -1,0 +1,22 @@
+Activities Performed
+
+During the first week, the project planning and environment setup phase was completed successfully. The primary objective was to establish a strong foundation before starting the actual development of the **Dots and Boxes Game**.
+
+
+The project objectives and scope were clearly defined to identify the main features and expected outcomes of the application. I decided to develop a two-player **Dots and Boxes** game using Java, where players take turns drawing lines to complete boxes and earn points.
+
+
+After defining the project scope, I thoroughly studied the rules and gameplay mechanics of **Dots and Boxes**. The game flow, player turns, box completion process, scoring system, and winner determination were analyzed to gain a clear understanding of the game logic before implementation.
+
+
+Next, I installed and configured the **Java Development Kit (JDK)** and the required development environment. The Integrated Development Environment (IDE) was prepared, Java was tested successfully, and the project workspace was created to begin development.
+
+
+Once the development environment was ready, I created the project structure by organizing the necessary packages, classes, and folders. A modular structure was planned to separate different functionalities such as the game board, player management, game logic, scoring system, and user interface.
+
+
+I then designed the game board layout and user interaction flow. A basic wireframe of the board was prepared, showing how players would select lines, complete boxes, view scores, and continue gameplay. This helped me visualize the user experience before starting the implementation.
+
+
+Finally, I reviewed the overall software architecture. The relationships between different modules were planned, the responsibilities of each class were identified, and a development roadmap for the following weeks was prepared.
+
