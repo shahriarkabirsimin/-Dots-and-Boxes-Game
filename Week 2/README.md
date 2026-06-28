@@ -20,7 +20,7 @@ A separate GamePanel class was created by extending JPanel. This panel will be u
 
 ### Screenshot
 
-![Game Panel](SS-2.png)
+![Game Panel](SS-3.png)
 
 
 ## 3. Set up the Event-Handling System
@@ -29,7 +29,7 @@ Mouse event handling was implemented using MouseAdapter. The application detects
 
 ### Screenshot
 
-![Mouse Event](SS-3.png)
+![Mouse Event](SS-2.png)
 
 
 ## 4. Display the Game Board Grid
@@ -38,7 +38,7 @@ A 4×4 grid of dots was drawn using the Graphics class and paintComponent() meth
 
 ### Screenshot
 
-![Grid](SS-1.png)
+![Grid](SS-4.png)
 
 
 
