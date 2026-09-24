@@ -1,28 +1,189 @@
-# -Dots-and-Boxes-Game
+# DOTS AND BOXES GAME
 
-Description:
+A Java Swing based desktop implementation of the classic Dots and Boxes game.
 
-A console-based strategy game where two players take turns drawing lines between adjacent dots on a grid. When a player completes all four sides of a box, the box is claimed by that player and a point is awarded. The player with the highest score at the end of the game wins.
+## Project Overview
 
-Tools / Resources
+Dots and Boxes is a turn-based strategy game where players draw lines between adjacent dots. When a player completes all four sides of a box, the player earns one point and receives another turn.
 
-• Language: Java (JDK 8 or higher)     
-• Libraries: java.util.Scanner (User Input), java.util.ArrayList (Move Tracking)   
-• IDE: IntelliJ IDEA or Eclipse
+This project provides both two-player and single-player gameplay with multiple board sizes and computer difficulty levels.
 
-Steps
+## Features
 
-• Display a grid of dots on the console screen.  
-• Allow players to draw horizontal or vertical lines between dots.  
-• Validate moves to prevent duplicate line entries.   
-• Detect completed boxes automatically.   
-• Update player scores and declare the winner after all boxes are completed.
+* Player name input
+* Player color selection
+* Player color validation
+* 3 × 3 board
+* 4 × 4 board
+* 5 × 5 board
+* Two Player mode
+* Single Player mode
+* Easy difficulty
+* Medium difficulty
+* Hard difficulty
+* Horizontal and vertical line selection
+* Automatic box detection
+* Score system
+* Extra turn after completing a box
+* Turn indicator
+* Last-move visual feedback
+* Sound effects
+* Winner animation
+* Confetti animation
+* Winner and draw screen
+* New Game option
 
-Architecture
+## Technologies Used
 
-Game Board Manager → Move Validator → Line Drawing Engine → Box Detection Module → Score Calculator → Winner Announcement.
+* Java
+* Java Swing
+* Java 2D Graphics
+* Apache NetBeans
+* Object-Oriented Programming
 
-Outcome
+## Project Structure
 
-An interactive strategy game that demonstrates array manipulation, game logic, score tracking, and object-oriented programming without requiring a database.
+```text
+dot.and.boxes
+│
+├── DotAndBoxes.java
+├── GameFrame.java
+├── GamePanel.java
+├── Board.java
+├── Dot.java
+└── Player.java
+```
+
+### Class Description
+
+**DotAndBoxes.java**
+The main class that starts the application.
+
+**GameFrame.java**
+Creates the main window and player setup interface.
+
+**GamePanel.java**
+Controls the main gameplay, user interaction, AI, scoring, sound, animation, and winner screen.
+
+**Board.java**
+Manages dots, lines, boxes, line ownership, and box ownership.
+
+**Dot.java**
+Represents a dot on the board.
+
+**Player.java**
+Stores player information such as name, color, number, and score.
+
+## How to Run
+
+1. Install a compatible Java Development Kit (JDK).
+2. Open the project in Apache NetBeans or another Java IDE.
+3. Make sure all Java source files are inside the `dot.and.boxes` package.
+4. Run `DotAndBoxes.java`.
+5. The Player Setup screen will appear.
+
+## How to Play
+
+1. Enter Player 1's name.
+2. Enter Player 2's name for Two Player mode.
+3. Select player colors.
+4. Select the board size.
+5. Select the game mode.
+6. Select a difficulty level when using Single Player mode.
+7. Click **START GAME**.
+8. Click a line between two adjacent dots.
+9. Complete a box to earn one point.
+10. Completing a box gives the same player another turn.
+11. The game ends when all boxes are completed.
+12. The player with the highest score wins.
+
+## Game Modes
+
+### Two Players
+
+Two human players play against each other on the same computer.
+
+### Single Player
+
+One human player plays against the computer.
+
+The computer supports:
+
+* Easy
+* Medium
+* Hard
+
+## Board Sizes
+
+The game supports:
+
+* 3 × 3
+* 4 × 4
+* 5 × 5
+
+## Scoring
+
+Each completed box gives one point to the player who completes it.
+
+The player with the highest final score wins.
+
+If both players have equal scores, the result is a draw.
+
+## Extra Turn
+
+When a player completes a box, that player keeps the current turn.
+
+If the selected line does not complete a box, the turn changes to the other player.
+
+## Computer Opponent
+
+The computer opponent evaluates available moves and uses different decision rules depending on the selected difficulty.
+
+The computer can identify box-completing moves and evaluate potentially dangerous moves.
+
+## Sound and Visual Effects
+
+The game includes:
+
+* Line selection sound
+* Invalid move sound
+* Box completion sound
+* Winner sound
+* Last-move blinking effect
+* Winner confetti animation
+
+## System Requirements
+
+### Minimum
+
+* Java Development Kit
+* 4 GB RAM
+* Standard desktop/laptop computer
+
+### Recommended
+
+* Modern processor
+* 4 GB or more RAM
+* Updated JDK
+* Apache NetBeans or another Java IDE
+
+## Future Improvements
+
+Possible future improvements include:
+
+* Advanced AI using Minimax
+* Online multiplayer
+* Save and load game
+* Player statistics
+* More board sizes
+* Additional visual effects
+* Background music and volume control
+
+## Author
+
+**Md. Shahriar Kabir Simin**
+
+## Project Type
+
+Academic Java GUI Project
 
