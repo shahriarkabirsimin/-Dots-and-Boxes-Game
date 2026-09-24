@@ -1,188 +1,166 @@
-# DOTS AND BOXES GAME
+# USER GUIDE
 
-A Java Swing based desktop implementation of the classic Dots and Boxes game.
+## Dots and Boxes Game
 
-## Project Overview
+### 1. Starting the Game
 
-Dots and Boxes is a turn-based strategy game where players draw lines between adjacent dots. When a player completes all four sides of a box, the player earns one point and receives another turn.
+Run the `DotAndBoxes.java` file from the Java project.
 
-This project provides both two-player and single-player gameplay with multiple board sizes and computer difficulty levels.
+After running the program, the **DOTS & BOXES** player setup screen will appear.
 
-## Features
+---
 
-* Player name input
-* Player color selection
-* Player color validation
-* 3 × 3 board
-* 4 × 4 board
-* 5 × 5 board
-* Two Player mode
-* Single Player mode
-* Easy difficulty
-* Medium difficulty
-* Hard difficulty
-* Horizontal and vertical line selection
-* Automatic box detection
-* Score system
-* Extra turn after completing a box
-* Turn indicator
-* Last-move visual feedback
-* Sound effects
-* Winner animation
-* Confetti animation
-* Winner and draw screen
-* New Game option
+### 2. Player Setup
 
-## Technologies Used
+On the setup screen:
 
-* Java
-* Java Swing
-* Java 2D Graphics
-* Apache NetBeans
-* Object-Oriented Programming
+1. Enter the name of Player 1.
+2. Enter the name of Player 2.
+3. Select a color for Player 1.
+4. Select a different color for Player 2.
 
-## Project Structure
+The two players cannot use the same color.
 
-```text
-dot.and.boxes
-│
-├── DotAndBoxes.java
-├── GameFrame.java
-├── GamePanel.java
-├── Board.java
-├── Dot.java
-└── Player.java
-```
+---
 
-### Class Description
+### 3. Selecting Board Size
 
-**DotAndBoxes.java**
-The main class that starts the application.
-
-**GameFrame.java**
-Creates the main window and player setup interface.
-
-**GamePanel.java**
-Controls the main gameplay, user interaction, AI, scoring, sound, animation, and winner screen.
-
-**Board.java**
-Manages dots, lines, boxes, line ownership, and box ownership.
-
-**Dot.java**
-Represents a dot on the board.
-
-**Player.java**
-Stores player information such as name, color, number, and score.
-
-## How to Run
-
-1. Install a compatible Java Development Kit (JDK).
-2. Open the project in Apache NetBeans or another Java IDE.
-3. Make sure all Java source files are inside the `dot.and.boxes` package.
-4. Run `DotAndBoxes.java`.
-5. The Player Setup screen will appear.
-
-## How to Play
-
-1. Enter Player 1's name.
-2. Enter Player 2's name for Two Player mode.
-3. Select player colors.
-4. Select the board size.
-5. Select the game mode.
-6. Select a difficulty level when using Single Player mode.
-7. Click **START GAME**.
-8. Click a line between two adjacent dots.
-9. Complete a box to earn one point.
-10. Completing a box gives the same player another turn.
-11. The game ends when all boxes are completed.
-12. The player with the highest score wins.
-
-## Game Modes
-
-### Two Players
-
-Two human players play against each other on the same computer.
-
-### Single Player
-
-One human player plays against the computer.
-
-The computer supports:
-
-* Easy
-* Medium
-* Hard
-
-## Board Sizes
-
-The game supports:
+The game provides three board sizes:
 
 * 3 × 3
 * 4 × 4
 * 5 × 5
 
-## Scoring
+Select the desired board size from the **Board Size** menu.
 
-Each completed box gives one point to the player who completes it.
+---
 
-The player with the highest final score wins.
+### 4. Selecting Game Mode
 
-If both players have equal scores, the result is a draw.
+The game provides two modes:
 
-## Extra Turn
+**Two Players**
+Two human players play against each other.
 
-When a player completes a box, that player keeps the current turn.
+**Single Player**
+Player 1 plays against the computer.
 
-If the selected line does not complete a box, the turn changes to the other player.
+---
 
-## Computer Opponent
+### 5. Selecting Difficulty
 
-The computer opponent evaluates available moves and uses different decision rules depending on the selected difficulty.
+When Single Player mode is selected, the difficulty menu becomes available.
 
-The computer can identify box-completing moves and evaluate potentially dangerous moves.
+The available levels are:
 
-## Sound and Visual Effects
+* Easy
+* Medium
+* Hard
 
-The game includes:
+Difficulty selection is not required for Two Player mode.
 
-* Line selection sound
-* Invalid move sound
-* Box completion sound
-* Winner sound
-* Last-move blinking effect
-* Winner confetti animation
+---
 
-## System Requirements
+### 6. Starting the Game
 
-### Minimum
+After selecting the required settings, click the **START GAME** button.
 
-* Java Development Kit
-* 4 GB RAM
-* Standard desktop/laptop computer
+The game board will appear.
 
-### Recommended
+---
 
-* Modern processor
-* 4 GB or more RAM
-* Updated JDK
-* Apache NetBeans or another Java IDE
+### 7. Playing the Game
 
-## Future Improvements
+During the game, click a line between two adjacent dots.
 
-Possible future improvements include:
+You can select:
 
-* Advanced AI using Minimax
-* Online multiplayer
-* Save and load game
-* Player statistics
-* More board sizes
-* Additional visual effects
-* Background music and volume control
+* Horizontal lines
+* Vertical lines
 
-## Author
+A selected line cannot be selected again.
 
-**Md. Shahriar Kabir Simin**
+---
 
-## Project Type
+### 8. Completing a Box
 
-Academic Java GUI Project
+A box is completed when all four sides are selected.
+
+When you complete a box:
+
+* Your score increases by 1.
+* The completed box is displayed with your color.
+* You receive another turn.
+
+---
+
+### 9. Changing Turns
+
+If your selected line does not complete a box, the turn changes to the other player.
+
+The current player's turn is displayed on the screen.
+
+In Single Player mode, the computer will automatically make its move when it is the computer's turn.
+
+---
+
+### 10. Scoring
+
+Each completed box gives one point.
+
+The score is displayed on each player's card.
+
+The game continues until every box on the board has been completed.
+
+---
+
+### 11. Winning the Game
+
+When all boxes are completed, the final scores are compared.
+
+The player with the higher score is the winner.
+
+If both players have the same score, the game ends in a draw.
+
+---
+
+### 12. Winner Screen
+
+After the game ends, the winner screen displays:
+
+* Congratulations message
+* Winner name
+* Final scores
+* Winner animation
+* Confetti effect
+* New Game button
+
+---
+
+### 13. Starting a New Game
+
+Click the **NEW GAME** button on the winner screen.
+
+The player setup screen will appear again, allowing you to configure another game.
+
+---
+
+### 14. Invalid Move
+
+If you click an already selected line or an invalid position, the game will not accept the move.
+
+An error sound is played to provide feedback.
+
+---
+
+### 15. Tips for Playing
+
+* Try to complete boxes whenever possible.
+* Avoid giving the opponent an easy opportunity to complete a box.
+* In Single Player mode, the computer automatically selects its moves.
+* Larger boards provide longer games and more boxes to complete.
+
+---
+
+## End of User Guide
+
